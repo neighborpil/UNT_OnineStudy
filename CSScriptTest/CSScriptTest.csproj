@@ -306,6 +306,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Hero.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\Resources\Scripts\MyFirstScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Sample.cs" />
     <Compile Include="Assets\Sample2.cs" />
