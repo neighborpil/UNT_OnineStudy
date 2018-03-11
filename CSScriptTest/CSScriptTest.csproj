@@ -306,9 +306,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Animal.cs" />
+    <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\EnemyCube.cs" />
+    <Compile Include="Assets\EnemyMaster.cs" />
+    <Compile Include="Assets\EnemyScript.cs" />
     <Compile Include="Assets\Hero.cs" />
+    <Compile Include="Assets\Monster.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\DelegateSample.cs" />
+    <Compile Include="Assets\Resources\Scripts\DicSample.cs" />
     <Compile Include="Assets\Resources\Scripts\MyFirstScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\Orc.cs" />
     <Compile Include="Assets\Resources\Scripts\Sample.cs" />
     <Compile Include="Assets\Sample2.cs" />
     <Compile Include="Assets\Sample3.cs" />

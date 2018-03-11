@@ -5,32 +5,35 @@ using UnityEngine;
 public class Hero : MonoBehaviour {
 
     public GameObject[] enemies;
-    int count = 0;
+    List<GameObject> orcs = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
-		
+        foreach (var enemy in enemies)
+        {
+            if (enemy.tag == "Orc")
+            {
+                orcs.Add(enemy);
+
+            }
+        }
 	}
 
     private void OnMouseDown()
     {
-        if(enemies[count].GetComponent<Renderer>().material.color != Color.red)
-        {
-            enemies[count].GetComponent<Renderer>().material.color = Color.red;
-            count++;
-        }
-        else
-        {
-            enemies[count].GetComponent<Renderer>().material.color = Color.green;
-            count++;
-        }
-        if (count > enemies.Length - 1)
-            count = 0;
+        AllGreen();
+        orcs.ForEach(o => o.GetComponent<Renderer>().material.color = Color.blue);
     }
 
+    void AllGreen()
+    {
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].GetComponent<Renderer>().material.color = Color.green;
+        }
+    }
 
     // Update is called once per frame
     void Update () {
-		
 	}
 }
